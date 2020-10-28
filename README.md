@@ -25,6 +25,6 @@ Python3.7 is used to transform the incoming data stream via an AWS Lambda Functi
 <br>
 The Kinesis Analytics Application queries the data stream for prime numbers and forwards these records to the output Kinesis Firehose in CSV format.  These records are stored in the destination S3 Bucket.
 
-![](firehose-analytics-quickstart.png)
+![](infra.png)
 
 The AWS Lambda transformation is part of the Kinesis Analytics Application, rather than the input Kinesis Firehose, due to the fact that Kinesis Analytics pulls the untransformed records from Kinesis Firehose, rather than the transformed ones.  With this design, any transformations done via a Lambda Function in the input Kinesis Firehose would not persist in the Kinesis Analytics Application.
