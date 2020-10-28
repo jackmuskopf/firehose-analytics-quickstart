@@ -8,7 +8,7 @@
 
 ## Deployment
 - `terraform init`
-- `terraform apply`
+- `make apply`
 - `make stream # to send sample data`
   - Go to the AWS console and visit the SQL editor for your Kinesis Analytics application.  This will start the analytics application.
 <br>
