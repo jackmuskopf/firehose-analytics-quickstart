@@ -2,7 +2,7 @@
 
 ## Requirements
 - Terraform >= 0.13.0
-- Python3.x
+- Python3.x, boto3
 - GNU Make
 - An AWS account with default credentials configured
 
