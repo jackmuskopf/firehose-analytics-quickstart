@@ -17,7 +17,7 @@ After a few minutes, you can see the output of the firehoses in S3.
 
 ## Overview
 
-This example illustrates how to configure Kinesis Analytics to query data from Kinesis Firehose.  The after deploying the infrastructure with Terraform and starting the Kinesis Analytics Application in the AWS console, the `make stream` command is used to send random integers to the firehose.  Python3.7 is used to transform the incoming data stream via an AWS Lambda Function as part of the Kinesis Analytics Application.  The file `app/handlers.py` can be used as an example for transforming Kinesis records with Python.  The Kinesis Analytics Application queries for prime numbers in the data stream and forwards these records to the output Kinesis Firehose in CSV format.  These records are stored in the destination S3 Bucket.
+This example illustrates how to configure Kinesis Analytics to query data from Kinesis Firehose.  The after deploying the infrastructure with Terraform and starting the Kinesis Analytics Application in the AWS console, the `make stream` command is used to send random integers to the firehose.  Python3.7 is used to transform the incoming data stream via an AWS Lambda Function as part of the Kinesis Analytics Application.  The file `app/handlers.py` can be used as an example for transforming Kinesis records with Python.  The Kinesis Analytics Application queries the data stream for prime numbers and forwards these records to the output Kinesis Firehose in CSV format.  These records are stored in the destination S3 Bucket.
 
 ![](firehose-analytics-quickstart.png)
 
